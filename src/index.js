@@ -23,8 +23,23 @@ function Greeting(props) {
     );
 }
 
+const user = {
+    firstName: 'Mike',
+    lastName: 'Salvati'
+};
+
+function fullName(user){
+    return `${user.firstName} ${user.lastName}`;
+}
+
+const greeting = <h1>Hello {fullName(user)}</h1>;
+
 ReactDOM.render(
+<<<<<<< HEAD
     // <App />,
     Greeting(USER),
+=======
+    greeting,
+>>>>>>> 291425b9198c2a9bcd5d3e6f516b1681fc96e6e3
     document.getElementById('root')
 );
