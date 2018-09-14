@@ -5,9 +5,9 @@ const App = () => (
     <div>
         <div className="container">
         <h1>Student Grade Table</h1>
-            <Table/>
+            <Table />
         </div>
     </div>
 );
 
-export default App();
+export default App;
