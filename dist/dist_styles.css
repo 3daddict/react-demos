@@ -1,0 +1,11 @@
+.comp1 {
+    width: 600px;
+    height: 350px;
+    background-image: url(surf.jpg);
+    background-size: cover;
+}
+
+.c1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
