@@ -26,10 +26,11 @@ export default () => {
                  <Link to="./articles/acura">Acura</Link>
                 </li>
             </ul>
-        </div>
-            <Route path="./articles/lexus" component={Lexus} />
-            <Route path="./articles/nissan" component={Nissan} />
-            <Route path="./articles/acura" component={Acura} />
+        
+            <Route path="./lexus" component={Lexus} />
+            <Route path="./nissan" component={Nissan} />
+            <Route path="./acura" component={Acura} />
+            </div>
         </Router>
         
     );

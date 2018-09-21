@@ -26,9 +26,11 @@ const App = () => (
                     <Link to="/articles">Articles</Link>
                 </li>
             </ul>
+         
             <Route path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/articles" component={Articles} />
+           
         </div>
     </Router>
 );
