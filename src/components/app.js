@@ -1,11 +1,6 @@
 import React from 'react';
 import '../assets/css/app.css';
-import logo from '../assets/images/logo.svg';
-import {
-    BrowserRouter as Router,
-    Route,
-    Link
-} from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 //Routing Pages
 import Home from './home';
@@ -13,8 +8,7 @@ import About from './about';
 import Articles from './articles';
 
 const App = () => (
-    <Router>
-        <div>
+        <div className="container">
             <ul>
                 <li>
                     <Link to="/">Home</Link>
@@ -27,12 +21,11 @@ const App = () => (
                 </li>
             </ul>
          
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/articles" component={Articles} />
            
         </div>
-    </Router>
 );
 
 export default App;
